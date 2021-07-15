@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Playlist Carousel - css only</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <input
+        type="radio"
+        name="slider"
+        id="item-1"
+        checked
+        onkeypress="myFunction()"
+      />
+      <label class="previous" for="item-1"></label>
+
+      <input type="radio" name="slider" id="item-2" />
+
+      <input type="radio" name="slider" id="item-3" onkeypress="myFunction()" />
+      <label class="next" for="item-3"></label>
+
+      <div class="cards">
+        <label for="item-1" id="message-1">
+          <img id="img1 middleCard" src="img/testimonial_01.svg" />
+        </label>
+
+        <label for="item-2" id="message-2">
+          <img id="img2" src="img/testimonial_02.svg" />
+        </label>
+
+        <label for="item-3" id="message-3">
+          <img id="img3" src="img/testimonial_03.svg" />
+        </label>
+
+        <!-- end of cards -->
+      </div>
+
+      <!-- end of container -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
